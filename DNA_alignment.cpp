@@ -1,52 +1,6 @@
 
 
-////使用动态规划算法
-// 
-//#include<iostream>
-//#include<stdio.h>
-//#include<stdlib.h>
-//#include<string>
-//#include<string.h>
-//#include<math.h>
-//#include<algorithm>
-//using namespace std;
-////算法3.12 使用分治法的序列对准
-//char x[12]={'A','A','C','A','G','T','T','A','C','C'};
-//char y[10]={'T','A','A','G','G','T','C','A'};
-//int m=0,n=0;
-//int M[11][13]; 
-//int opt(int i,int j)
-//{
-//    int penalty;
-//    if(M[i][j]==-1){
-//    	if(i==m)
-//        return M[i][j]=2*(n-j);
-//    else if(j==n)
-//        return M[i][j]=2*(m-i);
-//    else{
-//        if(x[i]==y[j])
-//            penalty=0;
-//        else
-//            penalty=1;
-//        return M[i][j]=min(opt(i+1,j+1)+penalty,min(opt(i+1,j)+2,opt(i,j+1)+2));
-//    }
-//	} 
-//	else{
-//		return M[i][j];
-//	}
-//    
-//}
-//
-//int main()
-//{
-//	//初始化M 
-//    m=strlen(x);
-//    n=strlen(y);
-//    cout<<m<<" "<<n<<endl;
-//    int op=opt(0,0);
-//    
-//    cout<<op<<endl;
-//}
+//使用动态规划算法
 
 
 
@@ -173,14 +127,14 @@ int levenshteinDistance(const string &s1,const string &s2){
 //    cout<<endl;
 //  }
 //  cout<<"**************************"<<endl;
-//  cout<<"***************************"<<endl;
-//  for(int i=0;i<=len1;i++){
-//    for(int j=0;j<=len2;j++){
-//      cout<<oper[i][j]<<" ";
-//    }
-//    cout<<endl;
-//  }
-//  cout<<"**************************"<<endl;
+  cout<<"***************************"<<endl;
+  for(int i=0;i<=len1;i++){
+    for(int j=0;j<=len2;j++){
+      cout<<oper[i][j]<<" ";
+    }
+    cout<<endl;
+  }
+  cout<<"**************************"<<endl;
 
   trackBack(oper,s1,s2);
   return dp[0][0];

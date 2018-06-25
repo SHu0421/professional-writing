@@ -2,14 +2,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string>
+//使用分治算法 
 #include<string.h>
 #include<math.h>
 #include<algorithm>
 #include<time.h>
 using namespace std;
-//算法3.12 使用分治法的序列对准
-//char x[12]={'A','A','C','A','G','T','T','A','C','C'};
-//char y[10]={'T','A','A','G','G','T','C','A'};
+
 string x("AAAATATAAAAACTC");
  string y("TCGAATCTCACTTGA");
 int m=0,n=0;
